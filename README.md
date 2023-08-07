@@ -150,7 +150,7 @@ mandatory
 <li>how to start it</li>
 <li>how to use it</li>
 </ul>
-<ul>
+</ul>
 examples
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. For format, reference Docker’s AUTHORS page
 You should use branches and pull requests on GitHub - it will help you as team to organize your work
