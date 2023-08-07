@@ -204,6 +204,7 @@ Repo:
   
 <h2>3. BaseModel</h2>
 mandatory
+<p>
 Write a class BaseModel that defines all common attributes/methods for other classes:
 
 models/base_model.py
@@ -223,6 +224,7 @@ created_at and updated_at must be converted to string object in ISO format:
 format: %Y-%m-%dT%H:%M:%S.%f (ex: 2017-06-14T22:31:03.285259)
 you can use isoformat() of datetime object
 This method will be the first piece of the serialization/deserialization process: create a dictionary representation with “simple object type” of our BaseModel
+</p>
 <pre>
 guillaume@ubuntu:~/AirBnB$ cat test_base_model.py
 #!/usr/bin/python3
@@ -261,6 +263,7 @@ Repo:
   
 <h2>4. Create BaseModel from dictionary</h2>
 mandatory
+<p>
 Previously we created a method to generate a dictionary representation of an instance (method to_dict()).
 
 Now it’s time to re-create an instance with this dictionary representation.
@@ -277,6 +280,7 @@ each value of this dictionary is the value of this attribute name
 Warning: created_at and updated_at are strings in this dictionary, but inside your BaseModel instance is working with datetime object. You have to convert these strings into datetime object. Tip: you know the string format of these datetime
 otherwise:
 create id and created_at as you did previously (new instance)
+</p>
 <pre>
 guillaume@ubuntu:~/AirBnB$ cat test_base_model_dict.py
 #!/usr/bin/python3
@@ -332,6 +336,7 @@ Repo:
   
 <h2>5. Store first object</h2>
 mandatory
+<p>
 Now we can recreate a BaseModel from another one by using a dictionary representation:
 
 <class 'BaseModel'> -> to_dict() -> <class 'dict'> -> <class 'BaseModel'>
@@ -376,7 +381,7 @@ in the method save(self):
 call save(self) method of storage
 __init__(self, *args, **kwargs):
 if it’s a new instance (not from a dictionary representation), add a call to the method new(self) on storage
-
+</p>
 <pre>
 guillaume@ubuntu:~/AirBnB$ cat test_save_reload_base_model.py
 #!/usr/bin/python3
@@ -430,23 +435,25 @@ File: models/engine/file_storage.py, models/engine/__init__.py, models/__init__.
   </pre>
 <h2>6. Console 0.0.1</h2>
 mandatory
+<p>
 Write a program called console.py that contains the entry point of the command interpreter:
 
-You must use the module cmd
-Your class definition must be: class HBNBCommand(cmd.Cmd):
-Your command interpreter should implement:
-quit and EOF to exit the program
-help (this action is provided by default by cmd but you should keep it updated and documented as you work through tasks)
-a custom prompt: (hbnb)
-an empty line + ENTER shouldn’t execute anything
-Your code should not be executed when imported
-Warning:
+<li>You must use the module cmd</li>
+<li>Your class definition must be: class HBNBCommand(cmd.Cmd):</li>
+<li>Your command interpreter should implement:</li>
+<li>quit and EOF to exit the program</li>
+<li>help (this action is provided by default by cmd but you should keep it updated and documented as you work through tasks)</li>
+<li>a custom prompt: (hbnb)</li>
+<li>an empty line + ENTER shouldn’t execute anything</li>
+<li>Your code should not be executed when imported</li>
+<b>Warning:</b>
 
 You should end your file with:
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
 to make your program executable except when imported. Please don’t add anything around - the Checker won’t like it otherwise
+</p>
 <pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) help
