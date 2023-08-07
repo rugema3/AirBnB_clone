@@ -133,18 +133,24 @@ EOF  help  quit
 $
 
 All tests should also pass in non-interactive mode: $ echo "python3 -m unittest discover tests" | bash
-<img src="images/airbnb2.png" alt="Airbnb Logo">
-
 </pre>
+<img src="images/airbnb2.png" alt="Airbnb Logo">
 
 <h1>Tasks</h1>
 <h2>0. README, AUTHORS</h2>
 mandatory
-Write a README.md:
-description of the project
-description of the command interpreter:
-how to start it
-how to use it
+<ul>
+<li>Write a README.md:
+<ul>
+<li>description of the project</li>
+</ul>
+
+<li>description of the command interpreter:</li>
+<ul>
+<li>how to start it</li>
+<li>how to use it</li>
+</ul>
+<ul>
 examples
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. For format, reference Docker’s AUTHORS page
 You should use branches and pull requests on GitHub - it will help you as team to organize your work
