@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-import Json
+import json
+import os
+from models.base_model import BaseModel
+
 class FileStorage:
     def __init__(self):
         self.__file_path = 'file.json'
@@ -24,10 +27,9 @@ class FileStorage:
         if os.path.exists(self.__file_path):
             with open(self.__file_path, 'r') as file:
                 data = json.load(file)
-                from base_model import BaseModel  # Assuming the BaseModel class exists
                 for key, obj_data in data.items():
                     class_name, obj_id = key.split('.')
-                    class_ = eval(class_name)  # Convert class name to actual class
+                    class_ = eval(class_name)
                     obj = class_(**obj_data)
                     self.__objects[key] = obj
 
