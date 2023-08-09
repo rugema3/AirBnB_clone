@@ -1,8 +1,7 @@
 #!/usr/bin/python3
+"""Defines the FileStorage class."""
 import json
-import os
 from models.base_model import BaseModel
-
 class FileStorage:
     def __init__(self):
         self.__file_path = 'file.json'
@@ -21,10 +20,11 @@ class FileStorage:
             serialized_objects[key] = obj.to_dict()
 
         with open(self.__file_path, 'w') as file:
+            print("inside save method.")
             json.dump(serialized_objects, file)
 
     def reload(self):
-        if os.path.exists(self.__file_path):
+        try:
             with open(self.__file_path, 'r') as file:
                 data = json.load(file)
                 for key, obj_data in data.items():
@@ -32,4 +32,6 @@ class FileStorage:
                     class_ = eval(class_name)
                     obj = class_(**obj_data)
                     self.__objects[key] = obj
+        except FileNotFoundError:
+            pass
 
