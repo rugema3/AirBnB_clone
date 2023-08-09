@@ -23,8 +23,6 @@ class BaseModel():
             self.created_at = datetime.today()
             self.updated_at = datetime.today()
             self.datetime_format = "%Y-%m-%dT%H:%M:%S.%f"
-            from models import storage  # Import here to avoid circular import
-            storage.new(self)  # Call the new(self) method on storage
 
     def __str__(self):
         """Define string representation of the object."""
@@ -32,9 +30,7 @@ class BaseModel():
 
     def save(self):
         """Define save method."""
-        from models import storage  # Import here to avoid circular import
         self.updated_at = datetime.today()
-        storage.save()  # Call save(self) method of storage
 
     def to_dict(self):
         """Define to_dict method."""
