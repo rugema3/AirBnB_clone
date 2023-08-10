@@ -2,6 +2,12 @@
 """Define the file_storage module."""
 import json
 from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
 
 
 class FileStorage:
@@ -16,9 +22,16 @@ class FileStorage:
         self.__file_path = 'file.json'
         self.__objects = {}
 
-    def all(self):
-        """Retrieve the dictionary of objects."""
-        return self.__objects
+    def all(self, cls=None):
+        """Retrieve a dictionary of objects filtered by class name."""
+        if cls is None:
+            return self.__objects
+        else:
+            filtered_objects = {}
+            for key, obj in self.__objects.items():
+                if isinstance(obj, cls):
+                    filtered_objects[key] = obj
+            return filtered_objects
 
     def new(self, obj):
         """Add a new object to the __objects dictionary."""

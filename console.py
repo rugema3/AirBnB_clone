@@ -4,6 +4,11 @@
 import cmd
 from models.base_model import BaseModel
 from models import storage
+from models.place import Place
+from models.city import City
+from models.amenity import Amenity
+from models.review import Review
+from models.state import State
 
 
 class HBNBCommand(cmd.Cmd):
@@ -46,7 +51,6 @@ class HBNBCommand(cmd.Cmd):
         new_instance.save()
         print(new_instance.id)
 
-
     def do_all(self, line):
         """Print string representations of all instances.
 
@@ -65,7 +69,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
                 return
 
-            objs = [str(obj) for obj in storage.all().values() if isinstance(obj, obj_class)]
+            objs = [str(obj) for obj in storage.all(cls=obj_class).values()]  # Use cls parameter here
             print(objs)
 
     def do_show(self, line):
@@ -126,7 +130,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, line):
         """Update an instance based on class name and ID.
-    
+
         by adding or updating attributes.
         """
         args = line.split()
@@ -159,7 +163,7 @@ class HBNBCommand(cmd.Cmd):
             obj.save()
         else:
             print("** no instance found **")
-    
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
