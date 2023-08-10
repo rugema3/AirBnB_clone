@@ -23,8 +23,8 @@ class BaseModel():
             self.created_at = datetime.today()
             self.updated_at = datetime.today()
             self.datetime_format = "%Y-%m-%dT%H:%M:%S.%f"
-            from models import storage  # Import here to avoid circular import
-            storage.new(self)  # Call the new(self) method on storage
+            #from models import storage  # Import here to avoid circular import
+            #storage.new(self)  # Call the new(self) method on storage
 
 
     def __str__(self):
@@ -46,3 +46,10 @@ class BaseModel():
             'updated_at': self.updated_at.isoformat(),
             '__class__': self.__class__.__name__
         }
+
+if __name__ == "__main__":
+    a = BaseModel()
+    print(a.id)
+
+    b = BaseModel()
+    print(b.id)
