@@ -56,6 +56,6 @@ class FileStorage:
                     class_name, obj_id = key.split('.')
                     class_ = eval(class_name)
                     obj = class_(**obj_data)
-                    self.__objects[key] = obj
+                    self.__objects[key] = obj  # Keep the key format consistent
         except FileNotFoundError:
             pass

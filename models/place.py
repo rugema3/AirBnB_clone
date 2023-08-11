@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
     """Define Place class.
 
@@ -27,4 +28,4 @@ class Place(BaseModel):
     number_bathrooms = 0
     latitude = 0.0
     longitude = 0.0
-    amenity_ids = [] #Empty list containing amenity ids
+    amenity_ids = []  # Empty list containing amenity ids

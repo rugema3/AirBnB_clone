@@ -9,4 +9,4 @@ class State(BaseModel):
     Attributes:
     name(str):  The name of the state.
     """
-    name = "" # The name of the state is an empty string.
+    name = ""  # The name of the state is an empty string.

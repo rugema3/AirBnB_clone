@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from models.base_model import BaseModel
 from datetime import datetime
@@ -42,8 +43,14 @@ class TestBaseModel(unittest.TestCase):
         """Test the desired format."""
         a = BaseModel()
         format1 = "%Y-%m-%dT%H:%M:%S.%f"
-        self.assertEqual(a.created_at.strftime(format1), a.created_at.isoformat())
-        self.assertEqual(a.updated_at.strftime(format1), a.updated_at.isoformat())
+        self.assertEqual(
+                a.created_at.strftime(format1),
+                a.created_at.isoformat()
+                )
+        self.assertEqual(
+                a.updated_at.strftime(format1),
+                a.updated_at.isoformat()
+                )
 
     def test_str(self):
         """Test the string representation of BaseModel."""

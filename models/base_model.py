@@ -1,11 +1,8 @@
-#!/usr/bin/python3
-"""Define base_model module."""
-
 from uuid import uuid4
 from datetime import datetime
 
 
-class BaseModel():
+class BaseModel:
     """Define BaseModel class."""
 
     def __init__(self, *args, **kwargs):
@@ -23,9 +20,7 @@ class BaseModel():
             self.created_at = datetime.today()
             self.updated_at = datetime.today()
             self.datetime_format = "%Y-%m-%dT%H:%M:%S.%f"
-            #from models import storage  # Import here to avoid circular import
-            #storage.new(self)  # Call the new(self) method on storage
-
+            self.add_to_storage()
 
     def __str__(self):
         """Define string representation of the object."""
@@ -34,9 +29,7 @@ class BaseModel():
     def save(self):
         """Define save method."""
         self.updated_at = datetime.today()
-        from models import storage  # Import here to avoid circular import
-        storage.save()
-
+        self.update_storage()
 
     def to_dict(self):
         """Define to_dict method."""
@@ -47,9 +40,12 @@ class BaseModel():
             '__class__': self.__class__.__name__
         }
 
-if __name__ == "__main__":
-    a = BaseModel()
-    print(a.id)
+    def add_to_storage(self):
+        """Add the object to the storage."""
+        from models import storage
+        storage.new(self)
 
-    b = BaseModel()
-    print(b.id)
+    def update_storage(self):
+        """Update the object in the storage."""
+        from models import storage
+        storage.save()

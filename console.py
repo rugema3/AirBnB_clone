@@ -69,7 +69,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
                 return
 
-            objs = [str(obj) for obj in storage.all(cls=obj_class).values()]  # Use cls parameter here
+            objs = [str(obj) for obj in storage.all(cls=obj_class).values()]
             print(objs)
 
     def do_show(self, line):
@@ -83,7 +83,16 @@ class HBNBCommand(cmd.Cmd):
             return
 
         class_name = args[0]
-        if class_name not in storage.classes():
+        valid_class_names = [
+                'BaseModel',
+                'Place',
+                'City',
+                'Amenity',
+                'Review',
+                'State'
+                ]  # Add more if needed
+
+        if class_name not in valid_class_names:
             print("** class doesn't exist **")
             return
 
@@ -108,16 +117,22 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 0:
             print("** class name missing **")
             return
-
         class_name = args[0]
-        if class_name not in storage._classes:
+        valid_class_names = [
+                'BaseModel',
+                'Place',
+                'City',
+                'Amenity',
+                'Review',
+                'State'
+                ]  # Add more if needed
+
+        if class_name not in valid_class_names:
             print("** class doesn't exist **")
             return
-
         if len(args) < 2:
             print("** instance id missing **")
             return
-
         instance_id = args[1]
         key = "{}.{}".format(class_name, instance_id)
         all_objs = storage.all()
@@ -139,7 +154,16 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
         class_name = args[0]
-        if class_name not in storage.classes():
+        valid_class_names = [
+                'BaseModel',
+                'Place',
+                'City',
+                'Amenity',
+                'Review',
+                'State'
+                ]  # Add more if needed
+
+        if class_name not in valid_class_names:
             print("** class doesn't exist **")
             return
         if len(args) < 2:
