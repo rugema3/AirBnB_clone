@@ -9,6 +9,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 from models.state import State
+from models.user import User
 
 
 class HBNBCommand(cmd.Cmd):
@@ -16,9 +17,52 @@ class HBNBCommand(cmd.Cmd):
 
     This class implements the command-line console for the AirBnB project.
     """
-
-    intro = 'Welcome to the console, type "help" to know how it works.'
     prompt = "(hbnb) "
+
+    def default(self, line):
+        """Called when the command is not recognized."""
+        valid_class_names = [
+            'BaseModel',
+            'Place',
+            'City',
+            'Amenity',
+            'Review',
+            'State',
+            'User'  # Add more if needed
+        ]
+        parts = line.split('.')
+
+        if len(parts) == 2:
+            class_name = parts[0]
+
+            if class_name in valid_class_names:
+                if parts[1] == 'all()':
+                    objs = [
+                            str(obj)
+                            for obj
+                            in storage.all(cls=eval(class_name)).values()
+                            ]
+                    print(objs)
+                elif parts[1] == 'count()':
+                    count = len(storage.all(cls=eval(class_name)).values())
+                    print(count)
+                else:
+                    args = parts[1].split('(')
+                    if len(args) == 2 and args[1].endswith(')'):
+                        method_name = args[0]
+                        if method_name == 'show':
+                            instance_id = args[1][:-1]
+                            self.do_show(
+                                    "{} {}".format(class_name, instance_id)
+                                    )
+                        else:
+                            print("*** Unknown syntax: {}".format(line))
+                    else:
+                        print("*** Unknown syntax: {}".format(line))
+            else:
+                print("** class doesn't exist **")
+        else:
+            print("*** Unknown syntax: {}".format(line))
 
     def do_quit(self, line):
         """Quit the console."""
@@ -59,38 +103,53 @@ class HBNBCommand(cmd.Cmd):
         args = line.split()
 
         if len(args) == 0:
-            print([str(obj) for obj in storage.all().values()])
+            all_objs = storage.all()
+            for obj in all_objs.values():
+                print(obj)
         else:
             class_name = args[0]
-            try:
-                # Get the class from storage
-                obj_class = eval(class_name)
-            except NameError:
+            if not hasattr(storage, '_FileStorage__objects'):
+                storage.reload()
+            valid_class_names = [
+                'BaseModel',
+                'Place',
+                'City',
+                'Amenity',
+                'Review',
+                'State',
+                'User'  # Add more if needed
+            ]
+
+            if class_name not in valid_class_names:
                 print("** class doesn't exist **")
                 return
 
-            objs = [str(obj) for obj in storage.all(cls=obj_class).values()]
+            objs = [
+                    str(obj)
+                    for obj in storage.all(cls=eval(class_name)).values()
+                    ]
             print(objs)
 
     def do_show(self, line):
         """Show the string representation of an instance.
-
-        based on class name and ID.
+        This is based on class name and ID.
         """
         args = line.split()
+
         if len(args) == 0:
             print("** class name missing **")
             return
 
         class_name = args[0]
         valid_class_names = [
-                'BaseModel',
-                'Place',
-                'City',
-                'Amenity',
-                'Review',
-                'State'
-                ]  # Add more if needed
+            'BaseModel',
+            'Place',
+            'City',
+            'Amenity',
+            'Review',
+            'State',
+            'User'  # Add more if needed
+        ]
 
         if class_name not in valid_class_names:
             print("** class doesn't exist **")
@@ -187,6 +246,32 @@ class HBNBCommand(cmd.Cmd):
             obj.save()
         else:
             print("** no instance found **")
+
+    def do_count(self, line):
+        """Count the number of instances of a class."""
+        args = line.split()
+
+        if len(args) == 0:
+            print("** class name missing **")
+            return
+
+        class_name = args[0]
+        valid_class_names = [
+            'BaseModel',
+            'Place',
+            'City',
+            'Amenity',
+            'Review',
+            'State',
+            'User'  # Add more if needed
+        ]
+
+        if class_name not in valid_class_names:
+            print("** class doesn't exist **")
+            return
+
+        count = len(storage.all(cls=eval(class_name)).values())
+        print(count)
 
 
 if __name__ == '__main__':
