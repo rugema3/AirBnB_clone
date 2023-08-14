@@ -681,76 +681,92 @@ Repo:
 GitHub repository: AirBnB_clone
 File: models/state.py, models/city.py, models/amenity.py, models/place.py, models/review.py, tests/
   
-10. Console 1.0
+<h2>10. Console 1.0</h2>
 mandatory
-Update FileStorage to manage correctly serialization and deserialization of all our new classes: Place, State, City, Amenity and Review
+<p>
+Update FileStorage to manage correctly serialization and deserialization of all 
+our new classes: Place, State, City, Amenity and Review
 
-Update your command interpreter (console.py) to allow those actions: show, create, destroy, update and all with all classes created previously.
+Update your command interpreter (console.py) to allow those actions: 
+show, create, destroy, update and all with all classes created previously.
 
 Enjoy your first console!
 
 No unittests needed for the console
-
+</p>
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py, models/engine/file_storage.py, tests/
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py, models/engine/file_storage.py, tests/</li>
 
-11. All instances by class name
+<h2>11. All instances by class name</h2>
 #advanced
-Update your command interpreter (console.py) to retrieve all instances of a class by using: <class name>.all().
 
+Update your command interpreter (console.py) to retrieve all instances of a class by using: <class name>.all().
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.all()
 [[User] (246c227a-d5c1-403d-9bc7-6a47bb9f0f68) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611352), 'updated_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611363), 'password': '63a9f0ea7bb98050796b649e85481845', 'email': 'airbnb@mail.com', 'id': '246c227a-d5c1-403d-9bc7-6a47bb9f0f68'}, [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848291), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}]
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-12. Count instances
+<li>12. Count instances</li>
 #advanced
-Update your command interpreter (console.py) to retrieve the number of instances of a class: <class name>.count().
-
+<p>
+Update your command interpreter (console.py) to retrieve the number of 
+instances of a class: <class name>.count().
+</p>
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.count()
 2
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-13. Show
+<h2>13. Show</h2>
 #advanced
-Update your command interpreter (console.py) to retrieve an instance based on its ID: <class name>.show(<id>).
+<p>
+Update your command interpreter (console.py) to retrieve an 
+instance based on its ID: <class name>.show(<id>).
 
 Errors management must be the same as previously.
-
+</p>
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
 [User] (246c227a-d5c1-403d-9bc7-6a47bb9f0f68) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611352), 'updated_at': datetime.datetime(2017, 9, 28, 21, 12, 19, 611363), 'password': '63a9f0ea7bb98050796b649e85481845', 'email': 'airbnb@mail.com', 'id': '246c227a-d5c1-403d-9bc7-6a47bb9f0f68'}
 (hbnb) User.show("Bar")
 ** no instance found **
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-14. Destroy
+<h2>14. Destroy</h2>
 #advanced
-Update your command interpreter (console.py) to destroy an instance based on his ID: <class name>.destroy(<id>).
+<p>
+Update your command interpreter (console.py) to destroy an instance 
+based on his ID: <class name>.destroy(<id>).
 
 Errors management must be the same as previously.
-
+</p>
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.count()
 2
@@ -759,20 +775,24 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 1
 (hbnb) User.destroy("Bar")
 ** no instance found **
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-15. Update
+<li>15. Update</li>
 #advanced
-Update your command interpreter (console.py) to update an instance based on his ID: <class name>.update(<id>, <attribute name>, <attribute value>).
+<p>
+Update your command interpreter (console.py) to update an instance based 
+on his ID: <class name>.update(<id>, <attribute name>, <attribute value>).
 
 Errors management must be the same as previously.
-
+</p>
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88")
 [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'first_name': 'Betty', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848291), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}
@@ -782,20 +802,24 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb)
 (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88")
 [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'age': 89, 'first_name': 'John', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 15, 32, 299055), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-16. Update from dictionary
+<h2>16. Update from dictionary</h2>
 #advanced
-Update your command interpreter (console.py) to update an instance based on his ID with a dictionary: <class name>.update(<id>, <dictionary representation>).
+<p>
+Update your command interpreter (console.py) to update an instance based on his ID with 
+a dictionary: <class name>.update(<id>, <dictionary representation>).
 
 Errors management must be the same as previously.
-
+</p>
+<pre>
 guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88")
 [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'age': 23, 'first_name': 'Bob', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 15, 32, 299055), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}
@@ -804,16 +828,18 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) 
 (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88")
 [User] (38f22813-2753-4d42-b37c-57a17f1e4f88) {'age': 89, 'first_name': 'John', 'last_name': 'Bar', 'created_at': datetime.datetime(2017, 9, 28, 21, 11, 42, 848279), 'updated_at': datetime.datetime(2017, 9, 28, 21, 17, 10, 788143), 'password': 'b9be11166d72e9e3ae7fd407165e4bd2', 'email': 'airbnb@mail.com', 'id': '38f22813-2753-4d42-b37c-57a17f1e4f88'}
-(hbnb) 
+(hbnb)
+</pre> 
 No unittests needed
 
 Repo:
 
-GitHub repository: AirBnB_clone
-File: console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: console.py</li>
   
-17. Unittests for the Console!
+<h2>17. Unittests for the Console!</h2>
 #advanced
+<p>
 Write all unittests for console.py, all features!
 
 For testing the console, you should “intercept” STDOUT of it, we highly recommend you to use:
@@ -821,8 +847,75 @@ For testing the console, you should “intercept” STDOUT of it, we highly reco
 with patch('sys.stdout', new=StringIO()) as f:
     HBNBCommand().onecmd("help show")
 Otherwise, you will have to re-write the console by replacing precmd by default.
-
+</p>
 Repo:
 
-GitHub repository: AirBnB_clone
-File: tests/test_console.py
+<li>GitHub repository: AirBnB_clone</li>
+<li>File: tests/test_console.py</li>
+
+<h1>Command Interpreter Description:</h1>
+<p>
+The command interpreter, also known as a command-line console, is a program that provides 
+an interactive interface for users to interact with a computer system or application by entering commands. 
+These commands are typically text-based instructions that the interpreter processes and executes. 
+Command interpreters are commonly used in operating systems, software development environments, 
+and various applications to perform tasks, manage resources, and retrieve information.
+</p>
+
+<h2>Starting the Command Interpreter:</h2>
+<p>
+To start the command interpreter implemented in the provided 
+console.py module, follow these steps:
+</p>
+<ol>
+<li>Open a terminal or command prompt.</li>
+<li>Navigate to AirBnB_clone directory containing the console.py file.</li>
+<li>Run the following command: python3 console.py or ./console.py.</li>
+</ol>
+<p>
+After executing the command, you will enter the interactive command-line console, 
+where you can enter various commands to manage instances of different classes 
+within the AirBnB project.
+</p>
+
+<h2>Examples of Using the Command Interpreter: </h2>
+<p>
+Here are some examples of how to use the command interpreter once 
+you're inside the interactive console:
+</p>
+<li>Creating an instance of a class:</li>
+<pre>
+(hbnb) create BaseModel
+49faff9a-6318-451f-87b6-910505c55907
+</pre>
+
+<li>knowing the list of commands and how to use them:</li>
+<pre>
+(hbnb) help
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  empty  help  quit  show  update
+
+(hbnb) 
+</pre>
+
+<li>Checking a specific command:</li>
+<pre>
+(hsnb) help all
+Print string representations of all instances.
+
+        based on class name or all classes.
+</pre>
+
+<li>Quitting the interpreter:</li>
+<pre>
+(hbnb) quit
+</pre>
+
+<p>
+Please follow the aexamples provided above to check out
+different command and interact with the command interpreter.
+</p>
+
+
+
