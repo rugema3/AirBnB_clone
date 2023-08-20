@@ -50,7 +50,7 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 <br>
 
 <h1>More Info</h1>
-<img src="images/image1" alt="general overview of the project">
+<img src="images/image1.png" alt="general overview of the project">
 <br>
 <h2>Tasks</h2>
 <h3>0. Inline styling</h3>
@@ -86,7 +86,7 @@ Requirements:
 <li>You are not allowed to use the style tag in the head tag</li>
 <li>Use inline styling for all your tags</li>
 <br>
-<img src="images/task0" alt="header and footer">
+<img src="images/task0.png" alt="header and footer">
 Repo:
 
 <li>GitHub repository: AirBnB_clone</li>
