@@ -49,39 +49,49 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 <li>You have to follow all requirements but some margin/padding are missing - you should try to fit as much as you can to screenshots</li>
 <br>
 
+<h1>More Info</h1>
+<img src="images/image1" alt="general overview of the project">
+<br>
 <h2>Tasks</h2>
 <h3>0. Inline styling</h3>
 mandatory
 Write an HTML page that displays a header and a footer.
 
 Layout:
-
-Body:
-no margin
-no padding
-Header:
-color #FF0000 (red)
-height: 70px
-width: 100%
-Footer:
-color #00FF00 (green)
-height: 60px
-width: 100%
-text Best School center vertically and horizontally
-always at the bottom at the page
+<ul>
+<li>Body:</li>
+<ul>
+<li>no margin</li>
+<li>no padding</li>
+</ul>
+<li>Header:</li>
+<ul>
+<li>color #FF0000 (red)</li>
+<li>height: 70px</li>
+<li>width: 100%</li>
+</ul>
+<li>Footer:</li>
+<ul>
+<li>color #00FF00 (green)</li>
+<li>height: 60px</li>
+<li>width: 100%</li>
+<li>text Best School center vertically and horizontally</li>
+<li>always at the bottom at the page</li>
+</ul>
+</ul>
 Requirements:
 
-You must use the header and footer tags
-You are not allowed to import any files
-You are not allowed to use the style tag in the head tag
-Use inline styling for all your tags
-
-
+<li>You must use the header and footer tags</li>
+<li>You are not allowed to import any files</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>Use inline styling for all your tags</li>
+<br>
+<img src="images/task0" alt="header and footer">
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 0-index.html
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 0-index.html</li>
  
 1. Head styling
 mandatory
