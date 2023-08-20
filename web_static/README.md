@@ -93,87 +93,99 @@ Repo:
 <li>Directory: web_static</li>
 <li>File: 0-index.html</li>
  
-1. Head styling
+<h2>1. Head styling</h2>
 mandatory
-Write an HTML page that displays a header and a footer by using the style tag in the head tag (same as 0-index.html)
-
+<p>
+Write an HTML page that displays a header and a footer by using the style 
+tag in the head tag (same as 0-index.html)
+</p>
+<br>
 Requirements:
 
-You must use the header and footer tags
-You are not allowed to import any files
-No inline styling
-You must use the style tag in the head tag
-The layout must be exactly the same as 0-index.html
+<li>You must use the header and footer tags</li>
+<li>You are not allowed to import any files</li>
+<li>No inline styling</li>
+<li>You must use the style tag in the head tag</li>
+<li>The layout must be exactly the same as 0-index.html</li>
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 1-index.html
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 1-index.html</li>
  
-2. CSS files
+<h2>2. CSS files</h2>
 mandatory
+<p>
 Write an HTML page that displays a header and a footer by using CSS files (same as 1-index.html)
-
+</p>
 Requirements:
 
-You must use the header and footer tags
-No inline styling
-You must have 3 CSS files:
-styles/2-common.css: for global style (i.e. the body style)
-styles/2-header.css: for header style
-styles/2-footer.css: for footer style
-The layout must be exactly the same as 1-index.html
+<li>You must use the header and footer tags</li>
+<li>No inline styling</li>
+<li>You must have 3 CSS files:</li>
+<li>styles/2-common.css: for global style (i.e. the body style)</li>
+<li>styles/2-header.css: for header style</li>
+<li>styles/2-footer.css: for footer style</li>
+<li>The layout must be exactly the same as 1-index.html</li>
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 2-index.html, styles/2-common.css, styles/2-header.css, styles/2-footer.css
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+</li>File: 2-index.html, styles/2-common.css, styles/2-header.css, styles/2-footer.css</li>
  
-3. Zoning done!
+<h2>3. Zoning done!</h2>
 mandatory
+<p>
 Write an HTML page that displays a header and footer by using CSS files (same as 2-index.html)
-
+</p>
 Layout:
-
-Common:
-no margin
-no padding
-font color: #484848
-font size: 14px
-font family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-icon in the browser tab
-Header:
-color: white
-height: 70px
-width: 100%
-border bottom 1px #CCCCCC
-logo align on left and center vertically (20px space at the left)
-Footer:
-color white
-height: 60px
-width: 100%
-border top 1px #CCCCCC
-text Best School center vertically and horizontally
-always at the bottom at the page
+<ul>
+<li>Common:</li>
+<ul>
+<li>no margin</li>
+<li>no padding</li>
+<li>font color: #484848</li>
+<li>font size: 14px</li>
+<li>font family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;</li>
+<li>icon in the browser tab</li>
+</ul>
+<li>Header:</li>
+<ul>
+<li>color: white</li>
+<li>height: 70px</li>
+<li>width: 100%</li>
+<li>border bottom 1px #CCCCCC</li>
+<li>logo align on left and center vertically (20px space at the left)</li>
+</ul>
+<li>Footer:</li>
+<ul>
+<li>color white</li>
+<li>height: 60px</li>
+<li>width: 100%</li>
+<li>border top 1px #CCCCCC</li>
+<li>text Best School center vertically and horizontally</li>
+<li>always at the bottom at the page</li>
+</ul>
+</ul>
+<br>
 Requirements:
-
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 3 CSS files:
-styles/3-common.css: for the global style (i.e body style)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 3 CSS files:</li>
+<li>styles/3-common.css: for the global style (i.e body style)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for the footer style</li>
 
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 3-index.html, styles/3-common.css, styles/3-header.css, styles/3-footer.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 3-index.html, styles/3-common.css, styles/3-header.css, styles/3-footer.css, images/</li>
  
 4. Search!
 mandatory
