@@ -135,7 +135,7 @@ Repo:
 <li>Directory: web_static</li>
 <li>File: 2-index.html, styles/2-common.css, styles/2-header.css, styles/2-footer.css</li>
  
-<h2>3. Zoning done!</li>
+<h2>3. Zoning done!</h2>
 mandatory
 <p>
 Write an HTML page that displays a header and footer by using CSS files (same as 2-index.html)
@@ -191,101 +191,125 @@ Repo:
 <li>Directory: web_static</li>
 <li>File: 3-index.html, styles/3-common.css, styles/3-header.css, styles/3-footer.css, images/</li>
  
-4. Search!
+<h2>4. Search!</h2>
 mandatory
+<p>
 Write an HTML page that displays a header, footer and a filters box with a search button.
-
+</p>
 Layout: (based on 3-index.html)
-
-Container:
-between header and footer tags, add a div:
-classname: container
-max width 1000px
-margin top and bottom 30px - it should be 30px under the bottom of the header (screenshot)
-center horizontally
-Filter section:
-tag section
-classname filters
-inside the .container
-color white
-height: 70px
-width: 100% of the container
-border 1px #DDDDDD with radius 4px
-Button search:
-tag button
-text Search
-font size: 18px
-inside the section filters
-background color #FF5A5F
-text color #FFFFFF
-height: 48px
-width: 20% of the section filters
-no borders
-border radius: 4px
-center vertically and at 30px of the right border
-change opacity to 90% when the mouse is on the button
+<uL>
+<li>Container:</li>
+<ul>
+<li>between header and footer tags, add a div:</li>
+<li>classname: container</li>
+<li>max width 1000px</li>
+<li>margin top and bottom 30px - it should be 30px under the bottom of the header (screenshot)</li>
+<li>center horizontally</li>
+</ul>
+<li>Filter section:</li>
+<ul>
+<li>tag section</li>
+<li>classname filters</li>
+<li>inside the .container</li>
+<li>color white</li>
+<li>height: 70px</li>
+<li>width: 100% of the container</li>
+<li>border 1px #DDDDDD with radius 4px</li>
+</ul>
+<li>Button search:</li>
+<ul>
+<li>tag button</li>
+<li>text Search</li>
+<li>font size: 18px</li>
+<li>inside the section filters</li>
+<li>background color #FF5A5F</li>
+<li>text color #FFFFFF</li>
+<li>height: 48px</li>
+<li>width: 20% of the section filters</li>
+<li>no borders</li>
+<li>border radius: 4px</li>
+<li>center vertically and at 30px of the right border</li>
+<li>change opacity to 90% when the mouse is on the button</li>
+</ul>
+</ul>
 Requirements:
 
-You must use: header, footer, section, button tags
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 4 CSS files:
-styles/4-common.css: for the global style (body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
-styles/4-filters.css: for the filters style
-4-index.html won’t be W3C valid, don’t worry, it’s temporary
+<li>You must use: header, footer, section, button tags</li>
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 4 CSS files:</li>
+<ul>
+<li>styles/4-common.css: for the global style (body and .container styles)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for the footer style</li>
+<li>styles/4-filters.css: for the filters style</li>
+</ul>
+<li>4-index.html won’t be W3C valid, don’t worry, it’s temporary</li>
+<img src="images/task4.png" alt="Task 4 image">
 
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 4-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/4-filters.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 4-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/4-filters.css, images/ </li>
  
-5. More filters
+<h2>5. More filters</h2>
 mandatory
+<p>
 Write an HTML page that displays a header, footer and a filters box.
-
+</p>
 Layout: (based on 4-index.html)
-
-Locations and Amenities filters:
-tag: div
-classname: locations for location tag and amenities for the other
-inside the section filters (same level as the button Search)
-height: 100% of the section filters
-width: 25% of the section filters
-border right #DDDDDD 1px only for the first left filter
-contains a title:
-tag: h3
-font weight: 600
-text States or Amenities
-contains a subtitle:
-tag: h4
-font weight: 400
-font size: 14px
-text with fake contents
+<ul>
+<li>Locations and Amenities filters:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: locations for location tag and amenities for the other</li>
+<li>inside the section filters (same level as the button Search)</li>
+<li>height: 100% of the section filters</li>
+<li>width: 25% of the section filters</li>
+<li>border right #DDDDDD 1px only for the first left filter</li>
+<li>contains a title:</li>
+<ul>
+<li>tag: h3</li>
+<li>font weight: 600</li>
+<li>text States or Amenities</li>
+</ul>
+<li>contains a subtitle:</li>
+<ul>
+<li>tag: h4</li>
+<li>font weight: 400</li>
+<li>font size: 14px</li>
+<li>text with fake contents</li>
+</ul>
+</ul>
+</ul>
+<br>
 Requirements:
 
-You must use: header, footer, section, button, h3, h4 tags
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 4 CSS files:
-styles/4-common.css: for the global style (body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
-styles/5-filters.css: for the filters style
+<li>You must use: header, footer, section, button, h3, h4 tags</li>
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 4 CSS files:</li>
+<ul>
+<li>styles/4-common.css: for the global style (body and .container styles)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for the footer style</li>
+<li>styles/5-filters.css: for the filters style</li>
+</ul>
+<br>
+<img src="images/task5.png" alt="Task 5 image">
 
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 5-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/5-filters.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 5-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/5-filters.css, images/ </li>
  
 6. It's (h)over
 mandatory
