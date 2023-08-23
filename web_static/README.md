@@ -567,6 +567,10 @@ styles/3-footer.css: for the footer style
 styles/6-filters.css: for the filters style
 styles/100-places.css: for the places style
 
+<br>
+<img src="images/task100.png" alt="Task 9image">
+<br>
+
 
 Repo:
 
