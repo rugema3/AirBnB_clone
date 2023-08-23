@@ -311,163 +311,211 @@ Repo:
 <li>Directory: web_static</li>
 <li>File: 5-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/5-filters.css, images/ </li>
  
-6. It's (h)over
+<h2>6. It's (h)over</h2>
 mandatory
+<p>
 Write an HTML page that displays a header, footer and a filters box with dropdown.
-
+</p>
 Layout: (based on 5-index.html)
-
-Update Locations and Amenities filters to display a contextual dropdown when the mouse is on the filter div:
-tag ul
-classname popover
-text should be fake now
-inside each div
-not displayed by default
-color #FAFAFA
-width same as the div filter
-border #DDDDDD 1px with border radius 4px
-no list display
-Location filter has 2 levels of ul/li:
-state -> cities
-state name must be display in a h2 tag (font size 16px)
+<ul>
+<li>Update Locations and Amenities filters to display a contextual dropdown when the mouse is on the filter div:</li>
+<ul>
+<li>tag ul</li>
+<li>classname popover</li>
+<li>text should be fake now</li>
+<li>inside each div</li>
+<li>not displayed by default</li>
+<li>color #FAFAFA</li>
+<li>width same as the div filter</li>
+<li>border #DDDDDD 1px with border radius 4px</li>
+<li>no list display</li>
+<li>Location filter has 2 levels of ul/li:</li>
+<ul>
+<li>state -> cities</li>
+<li>state name must be display in a h2 tag (font size 16px)</li>
+</ul>
+</ul>
+</ul>
 Requirements:
 
-You must use: header, footer, section, button, h3, h4, ul, li tags
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 4 CSS files:
-styles/4-common.css: for the global style (body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
-styles/6-filters.css: for the filters style
- 
-
+<li>You must use: header, footer, section, button, h3, h4, ul, li tags</li>
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 4 CSS files:</li>
+<ul>
+<li>styles/4-common.css: for the global style (body and .container styles)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for the footer style</li>
+<li>styles/6-filters.css: for the filters style</li>
+</ul>
+ <br>
+ <img src="images/task61.png" alt="task6 image">
+<br>
+<img src="images/task62.png" alt="Task6 image">
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 6-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 6-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, images/</li>
+<br>
  
-7. Display results
+<h2>7. Display results</h2>
 mandatory
+<p>
 Write an HTML page that displays a header, footer, a filters box with dropdown and results.
-
+</p>
 Layout: (based on 6-index.html)
 
-Add Places section:
-tag: section
-classname: places
-same level as the filters section, inside .container
-contains a title:
-tag: h1
-text: Places
-align in the top left
-font size: 30px
-contains multiple “Places” as listing (horizontal or vertical) describe by:
-tag: article
-width: 390px
-padding and margin 20px
-border #FF5A5F 1px with radius 4px
-contains the place name:
-tag: h2
-font size: 30px
-center horizontally
+<li>Add Places section:</li>
+<ul>
+<li>tag: section</li>
+<li>classname: places</li>
+<li>same level as the filters section, inside .container</li>
+<li>contains a title:</li>
+<ul>
+<li>tag: h1</li>
+<li>text: Places</li>
+<li>align in the top left</li>
+<li>font size: 30px</li>
+</ul>
+<li>contains multiple “Places” as listing (horizontal or vertical) describe by:</li>
+<ul>
+<li>tag: article</li>
+<li>width: 390px</li>
+<li>padding and margin 20px</li>
+<li>border #FF5A5F 1px with radius 4px</li>
+<li>contains the place name:</li>
+<ul>
+<li>tag: h2</li>
+<li>font size: 30px</li>
+<li>center horizontally</li>
+</ul>
+</ul>
+</ul>
 Requirements:
 
-You must use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags
-No inline style
-You are not allowed to use the img tag
-
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 5 CSS files:
-styles/4-common.css: for the global style (i.e. body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for footer style
-styles/6-filters.css: for the filters style
-styles/7-places.css: for the places style
+<li>You must use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags</li>
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 5 CSS files:</li>
+<ul>
+<li>styles/4-common.css: for the global style (i.e. body and .container styles)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for footer style</li>
+<li>styles/6-filters.css: for the filters style</li>
+<li>styles/7-places.css: for the places style</li>
+</ul>
+<br>
+<img src="images/task7.png" alt="Task7 image">
+<br>
 
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 7-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/7-places.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 7-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/7-places.css, images/ </li>
  
-8. More details
+<h2>8. More details</h2>
 mandatory
-Write an HTML page that displays a header, a footer, a filter box (dropdown list) and the result of the search.
+<p>
+Write an HTML page that displays a header, a footer, a filter box (dropdown list) 
+and the result of the search.
+</p>
 
 Layout: (based on 7-index.html)
 
 Add more information to a Place article:
-
-Price by night:
-tag: div
-classname: price_by_night
-same level as the place name
-font color: #FF5A5F
-border: #FF5A5F 4px rounded
-min width: 60px
-height: 60px
-font size: 30px
-align: the top right (with space)
-Information section:
-tag: div
-classname: information
-height: 80px
-border: top and bottom #DDDDDD 1px
-contains (align vertically):
-Number of guests:
-tag: div
-classname: max_guest
-width: 100px
-fake text
-icon
-Number of bedrooms:
-tag: div
-classname: number_rooms
-width: 100px
-fake text
-icon
-Number of bathrooms:
-tag: div
-classname: number_bathrooms
-width: 100px
-fake text
-icon
-User section:
-tag: div
-classname: user
-text Owner: <fake text>
-Owner text should be in bold
-Description section:
-tag: div
-classname: description
+<ul>
+<li>Price by night:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: price_by_night</li>
+<li>same level as the place name</li>
+<li>font color: #FF5A5F</li>
+<li>border: #FF5A5F 4px rounded</li>
+<li>min width: 60px</li>
+<li>height: 60px</li>
+<li>font size: 30px</li>
+<li>align: the top right (with space)</li>
+</ul>
+<li>Information section:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: information</li>
+<li>height: 80px</li>
+<li>border: top and bottom #DDDDDD 1px</li>
+<li>contains (align vertically):</li>
+<ul>
+<li>Number of guests:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: max_guest</li>
+<li>width: 100px</li>
+<li>fake text</li>
+<li>icon</li>
+</ul>
+<li>Number of bedrooms:</li>
+<ul>
+<li>tag: div</ul>
+<li>classname: number_rooms</ul>
+<li>width: 100px</li>
+<li>fake text</li>
+<li>icon</li>
+</ul>
+<li>Number of bathrooms:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: number_bathrooms</li>
+<li>width: 100px</li>
+<li>fake text</li>
+<li>icon</li>
+</ul>
+</ul>
+</ul>
+<li>User section:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: user</li>
+<li>text Owner: <fake text></li>
+<li>Owner text should be in bold</li>
+</ul>
+<li>Description section:</li>
+<ul>
+<li>tag: div</li>
+<li>classname: description</li>
+</ul>
+</ul>
 Requirements:
 
-You must use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 5 CSS files:
-styles/4-common.css: for the global style (i.e. body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
-styles/6-filters.css: for the filters style
-styles/8-places.css: for the places style
+<li>You must use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags</li>
+<li>No inline style</li>
+<li>You are not allowed to use the img tag</li>
+<li>You are not allowed to use the style tag in the head tag</li>
+<li>All images must be stored in the images folder</li>
+<li>You must have 5 CSS files:</li>
+<ul>
+<li>styles/4-common.css: for the global style (i.e. body and .container styles)</li>
+<li>styles/3-header.css: for the header style</li>
+<li>styles/3-footer.css: for the footer style</li>
+<li>styles/6-filters.css: for the filters style</li>
+<li>styles/8-places.css: for the places style</li>
+</ul>
+<br>
+<img src="images/task8.png" alt="Task8 image">
 
 
 Repo:
 
-GitHub repository: AirBnB_clone
-Directory: web_static
-File: 8-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/8-places.css, images/
+<li>GitHub repository: AirBnB_clone</li>
+<li>Directory: web_static</li>
+<li>File: 8-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/8-places.css, images/</li>
  
-9. Full details
+<h2>9. Full details</h2>
 #advanced
 Write an HTML page that displays a header, footer, a filters box with dropdown and results.
 
@@ -526,7 +574,7 @@ GitHub repository: AirBnB_clone
 Directory: web_static
 File: 100-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/100-places.css, images/
  
-10. Flex
+<h2>10. Flex</h2>
 #advanced
 Improve the Places section by using Flexible boxes for all Place articles
 
@@ -538,7 +586,7 @@ GitHub repository: AirBnB_clone
 Directory: web_static
 File: 101-index.html, styles/4-common.css, styles/3-header.css, styles/3-footer.css, styles/6-filters.css, styles/101-places.css, images/
  
-11. Responsive design
+<h2>11. Responsive design</h2>
 #advanced
 Improve the page by adding responsive design to display correctly in mobile or small screens.
 
@@ -553,7 +601,7 @@ GitHub repository: AirBnB_clone
 Directory: web_static
 File: 102-index.html, styles/102-common.css, styles/102-header.css, styles/102-footer.css, styles/102-filters.css, styles/102-places.css, images/
  
-12. Accessibility
+<h2>12. Accessibility</h2>
 #advanced
 Improve the page by adding Accessibility support
 
